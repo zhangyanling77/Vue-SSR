@@ -3,7 +3,7 @@ import createApp from './main'
 
 // 服务端需要调用当前文件产生一个app实例
 
-export default function(context) {
+export default (context) => {
   console.log(">>>>>", context, createApp())
   // 服务端将执行此方法
   return new Promise((resolve, reject) => {
@@ -12,8 +12,6 @@ export default function(context) {
     router.push(context.url)
     // 涉及到异步组件
     router.onReady(() => {
-      // debugger
-      console.log("ready") // 这里不进是为什么？
       // 获取当前跳转到的匹配的组件 matchs匹配到的所有组件， 整个都在服务端执行
       let matchs = router.getMatchedComponents()
 

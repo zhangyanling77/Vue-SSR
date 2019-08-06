@@ -22,6 +22,7 @@ router.get('/', async ctx => {
   ctx.body = await new Promise((resolve, reject) => {
     // 方法必须要写成回调函数形式，否则样式不生效
     render.renderToString({url: '/'}, (err, data) => {
+      console.log("=====>", err, data)
       if(err) reject(err)
       resolve(data)
     })
