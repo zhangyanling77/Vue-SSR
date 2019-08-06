@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default () => {
+  // console.log("vuex", Vuex)
   const store = new Vuex({
     state: {
       name: ''

@@ -3,7 +3,8 @@ import createApp from './main'
 
 // 服务端需要调用当前文件产生一个app实例
 
-export default (context) => {
+export default function(context) {
+  console.log(">>>>>", context, createApp())
   // 服务端将执行此方法
   return new Promise((resolve, reject) => {
     const { app, router, store } = createApp()
