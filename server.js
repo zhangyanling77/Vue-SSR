@@ -41,13 +41,14 @@ app.use(async ctx => {
       })
     })
   } catch(e) {
+    console.log(e)
     ctx.body = '404'
   }
   
 })
 
-app.listen(3001, () => {
-  console.log('listen at port 3001')
+app.listen(3000, () => {
+  console.log('listen at port 3000')
 })
 
 // 集成路由 面试会问 ssr中的路由跳转规则
