@@ -9,6 +9,7 @@ vue服务端渲染实践
 ```
 
 目录结构
+```
 -- vue-ssr
  -- build
   -- webpack.base.js
@@ -35,3 +36,4 @@ vue服务端渲染实践
  -- package.json
  -- server.js
  -- yarn.lock
+ ```
