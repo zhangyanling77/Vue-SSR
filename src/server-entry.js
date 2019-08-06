@@ -11,6 +11,8 @@ export default (context) => {
     router.push(context.url)
     // 涉及到异步组件
     router.onReady(() => {
+      // debugger
+      console.log("ready") // 这里不进是为什么？
       // 获取当前跳转到的匹配的组件 matchs匹配到的所有组件， 整个都在服务端执行
       let matchs = router.getMatchedComponents()
 

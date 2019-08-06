@@ -1,10 +1,14 @@
 # Vue-SSR
 vue服务端渲染实践
 
-
+执行顺序
 ```
+ yarn install
+
  npm run client:build
+
  npm run server:build
+
  nodemon server.js
 ```
 
@@ -19,7 +23,6 @@ vue服务端渲染实践
   - client.bundle.js
   - index.html
   - index.ssr.html
-  - server.bundle.js
   - vue-ssr-client-manifest.json
   - vue-ssr-server-bundle.json
   - 1.bundle.js
